@@ -75,6 +75,9 @@ class ArtistsController < ApplicationController
       @artist = Artist.find(params[:id])
     end
 
+    def test_ajax
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def artist_params
       params.require(:artist).permit(:name, :photo_url, :nationality)

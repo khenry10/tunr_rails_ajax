@@ -6,4 +6,7 @@ Rails.application.routes.draw do
     resources :songs
     resources :genres
   end
+
+  get '/test_ajax', to: 'artists#test_ajax'
+  
 end
